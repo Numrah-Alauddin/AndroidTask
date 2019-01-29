@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">2ndTask</string>
+    <string name="messageWithLink"><a href="https://goo.gl/jEgA8T"> https://goo.gl/jEgA8T</a></string>
+</resources>

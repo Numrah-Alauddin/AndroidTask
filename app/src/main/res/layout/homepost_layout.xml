@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/friend_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/friend_img"
+        android:text="Ahmed Ali"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/post_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friend_name"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/friend_img"
+        android:text="Just Now"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/dots_img" />
+
+    <TextView
+        android:id="@+id/post_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/post_time"
+        android:layout_marginTop="10dp"
+        android:text="Do Practice :-)"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/post_image1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/post_text"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/like_count"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/post_image1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/like_count" />
+
+    <TextView
+        android:id="@+id/like_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_image1"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/like_count"
+        android:text="2"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/post_image1"
+        android:layout_marginTop="10dp"
+        android:text="3 Comments"
+        android:textColor="@android:color/black" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/like_count"
+        android:layout_marginTop="10dp"
+        android:background="#734b4040" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/like"
+            android:tint="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Like"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="55dp"
+            android:src="@drawable/comment_btn"
+            android:tint="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Comment"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="55dp"
+            android:src="@drawable/share"
+            android:tint="@android:color/black" />
+
+        <TextView
+            android:id="@+id/share_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Share"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
