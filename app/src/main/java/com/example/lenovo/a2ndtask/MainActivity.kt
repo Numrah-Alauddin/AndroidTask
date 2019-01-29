@@ -8,6 +8,8 @@ import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
 
+    //Change in file
+
     companion object {
          var emailToPass:String=""
     }
